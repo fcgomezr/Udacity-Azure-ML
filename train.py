@@ -14,7 +14,7 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 # Data is located at:
 dir_web =  "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
-ds = TabularDatasetFactory.from_delimited_files(path=data_link)
+ds = TabularDatasetFactory.from_delimited_files(path=dir_web)
 
 
 def clean_data(data):
@@ -70,6 +70,9 @@ def main():
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
+
+    os.makedirs('outputs',exist_ok= True)
+    joblib.dump(model,'outputs/model.joblib')
 
 if __name__ == '__main__':
     main()
