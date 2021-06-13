@@ -7,9 +7,9 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
-
+n this project we have used UCI Bank Marketing dataset, which is related with direct marketing campaigns of a Portuguese baking institution. The classification goal is predict if the client will subscribe a term deposit (variable 'y'). 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
-
+n this project, we have used scikit-learn Logistic Regression and tuned the hyperparameters(optimal) using HyperDrive. We also used AutoML to build and optimize a model on the same dataset, so that we can compare the results of the two methods. The best performing model was obtained through AutoML - VotingEnsemble with accuracy of 0.9177
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
