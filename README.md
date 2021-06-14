@@ -97,7 +97,7 @@ The below snapshots gives the explanation of the best model prediction by highli
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
-Both the approaches - Logistics + Hyperdrive and AutoML follow similar data processing steps and the difference lies in their configuration details. In the first approach our ML model is fixed and we use hyperdrive tool to find optimal hyperparametets while in second approach different models are automatic generated with their own optimal hyperparameter values and the best model is selected. In the below image, we see that the hyperdrive approach took overall 11m 51s and the best model had an accuracy of ~0.9146 and the automl approach took overall 28m 58s and the best model had an acccuracy of ~0.9171.
+Both the approaches - Logistics + Hyperdrive and AutoML follow similar data processing steps and the difference lies in their configuration details. In the first approach our ML model is fixed and we use hyperdrive tool to find optimal hyperparametets while in second approach different models are automatic generated with their own optimal hyperparameter values and the best model is selected. In the below image, we see that the hyperdrive approach took overall 11m 51s and the best model had an accuracy of ~0.9146 and the automl approach took overall 28m 58s and the best model had an acccuracy of ~0.9169.
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
